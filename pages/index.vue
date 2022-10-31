@@ -2,14 +2,13 @@
 
 <template lang="pug">
 .index
-  
-
+  IndexHero
+  IndexCatalog
+  IndexTestimonials
+  IndexNotes
 </template>
 
 <style scoped lang="scss">
 .index {
-  background-color: #efefef;
-  width: 100%;
-  height: 500px;
 }
 </style>

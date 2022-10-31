@@ -29,7 +29,7 @@ const links: Link[] =  [
 
 <template lang="pug">
 header.header
-    img.header__logo(src="/img/logo.webp")
+    img.header__logo(src="/img/logo.webp" alt="Logo")
     nav.header__nav
         NuxtLink.header__nav__link(v-for="link in links" :to="link.route") {{ link.text }}
 </template>
@@ -38,7 +38,7 @@ header.header
 .header {
     position: fixed;
     width: 100vw;
-    background-color: transparent;
+    background: #e8efef;
     height: 100px;
     display: flex;
     justify-content: space-around;
@@ -47,7 +47,6 @@ header.header
         max-height: 80%;
         
     }
-
     &__nav {
         width: 60%;
         display: flex;

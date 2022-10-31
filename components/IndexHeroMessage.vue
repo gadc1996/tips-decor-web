@@ -1,0 +1,39 @@
+<script lang="ts" setup></script>
+
+<template lang="pug">
+.index-hero-message
+  h1.index-hero-message__title Bienvenido a Tips Decor
+  p.index-hero-message__content Quisque maximus mauris nec ullamcorper ornare. Sed suscipit molestie posuere. Praesent laoreet purus nec sollicitudin eleifend.
+  NuxtLink.index-hero-message__cta Conoce Mas 
+    IndexHeroMessageArrow
+</template>
+
+<style scoped lang="scss">
+.index-hero-message {
+  width: 30%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    margin: 0;
+  }
+  
+  &__content {
+    margin-top: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 39px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  &__cta {
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 33px;
+  }
+}
+</style>

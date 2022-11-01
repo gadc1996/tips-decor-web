@@ -3,6 +3,7 @@ interface Link {
     text: string,
     route: string
 }
+
 const links: Link[] =  [
     {
         text: 'Inicio',
@@ -43,6 +44,7 @@ header.header
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 1;
     &__logo {
         max-height: 80%;
         

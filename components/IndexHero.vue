@@ -1,9 +1,20 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { onMounted } from "vue";
+import { gsap } from "gsap";
+onMounted(() => {
+  gsap.from('.index-hero__img', {
+    opacity: 0,
+    x: 250,
+    duration: 2,
+    delay: 2,
+  })
+})
+</script>
 
 <template lang="pug">
 .index-hero
   IndexHeroMessage
-  img.hero__img(
+  img.index-hero__img(
     src="/img/hero.webp"
     alt="hero"
   )

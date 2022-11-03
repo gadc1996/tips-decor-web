@@ -4,6 +4,7 @@
 .default
   AppHeader
   NuxtPage
+  AppFooter
 </template>
 
 <style scoped></style>

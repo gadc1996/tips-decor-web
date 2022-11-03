@@ -24,7 +24,6 @@ onMounted(() => {
       start: "400px bottom",
       onEnter: batch => {
       gsap.fromTo(batch, {
-        y: -200
       }, {
         opacity: 100,
         time: 2,
@@ -32,26 +31,6 @@ onMounted(() => {
       });
         
       },
-      onEnterBack: batch => {
-      gsap.fromTo(batch, {
-        y: -200
-      }, {
-        opacity: 100,
-        time: 2,
-        y: 0
-      });
-        
-      },
-      onLeave: batch => {
-        gsap.to(batch, {
-          opacity: 0,
-        });
-      },
-      onLeaveBack: batch => {
-        gsap.to(batch, {
-          opacity: 0,
-        });
-      }
   })
 })
 </script>
@@ -66,7 +45,6 @@ NuxtLink(to='/').index-catalog-item(:class="{ right: isEven(index) }")
 
 <style scoped lang="scss">
 .index-catalog-item {
-  opacity: 0;
   position: relative;
   width: 400px;
   margin: 5rem 0;
@@ -75,11 +53,10 @@ NuxtLink(to='/').index-catalog-item(:class="{ right: isEven(index) }")
   text-decoration: none;
   align-self: flex-start;
   color: rgba(0, 0, 0, 0.8);
-  transition-duration: 0.5s;
   &:visited { color: inherit; }
   &:hover { 
-    transform: scale(1.05);
-   }
+    transform: scale(2);
+  }
 
   &__base {
     position: absolute;
@@ -88,7 +65,7 @@ NuxtLink(to='/').index-catalog-item(:class="{ right: isEven(index) }")
     height: 250px;
     width: 400px;
     border-radius: 20px;
-    background: #E8EFEF;
+    background: colors.$base;
   }
   
   &__img {

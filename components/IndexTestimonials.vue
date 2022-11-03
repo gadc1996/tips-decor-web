@@ -8,13 +8,7 @@
 
 <style scoped lang="scss">
 .index-testimonials {
-  &__title {
-    margin-top: 20rem;
-    margin-left: 9rem;
-    display: inline-block;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 49px;
-  }
+  min-height: 100vh;
+  &__title { @include mixins.title(20rem); }
 }
 </style>

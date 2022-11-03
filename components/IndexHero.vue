@@ -23,7 +23,7 @@ onMounted(() => {
 <style scoped lang="scss">
 .index-hero {
   padding-top: 100px;
-  background-color: #e8efef;
+  background-color: colors.$base;
   width: 100%;
   height: 70vh;
   display: flex;

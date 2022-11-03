@@ -39,7 +39,7 @@ header.header
 .header {
     position: fixed;
     width: 100vw;
-    background: #e8efef;
+    background: colors.$base;
     height: 100px;
     display: flex;
     justify-content: space-around;

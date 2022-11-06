@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+import { onMounted } from "vue";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger.js"
+
 interface Category  {
   name: string,
   image: string
@@ -22,6 +26,25 @@ const categories: Category[] = [
     image: 'img/desk.webp',
   },
 ]
+
+gsap.registerPlugin(ScrollTrigger)
+
+onMounted(() => {
+  const reveal = {
+    opacity: 100,
+  }
+  
+  const hide = {
+    opacity: 0,
+    
+  }
+  ScrollTrigger.batch('.index-catalog-item', {
+      start: "400px bottom",
+      onEnter: batch => {
+        gsap.fromTo(batch, hide, reveal);
+      },
+  })
+})
 
 </script>
 

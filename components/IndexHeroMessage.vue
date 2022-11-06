@@ -4,7 +4,7 @@
 .index-hero-message
   h1.index-hero-message__title Bienvenido a Tips Decor
   p.index-hero-message__content Quisque maximus mauris nec ullamcorper ornare. Sed suscipit molestie posuere. Praesent laoreet purus nec sollicitudin eleifend.
-  NuxtLink.index-hero-message__cta Conoce Mas 
+  NuxtLink(to="/about-us").index-hero-message__cta Conoce Mas 
     IndexHeroMessageArrow
 </template>
 
@@ -31,9 +31,15 @@
     color: rgba(0, 0, 0, 0.6);
   }
   &__cta {
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 0.6);
     margin-top: 2rem;
     font-weight: 400;
     font-size: 33px;
+    transition: all 1s linear;
+    &:hover {
+      text-decoration-color: rgba(0, 0, 0, 0.6);
+    }
   }
 }
 </style>

@@ -20,23 +20,23 @@ const links: Link[] =  [
         route: '/notas',
         
     },
-    {
-        text: 'Contacto',
-        route: '/contacto',
-        
-    },
 ]
+
+function openModal() { useIsModalVisible().value = true }
 </script>
 
 <template lang="pug">
-header.header
-    img.header__logo(src="/img/logo.webp" alt="Logo")
-    nav.header__nav
-        NuxtLink.header__nav__link(v-for="link in links" :to="link.route") {{ link.text }}
+header.app-header
+    img.app-header__logo(src="/img/logo.webp" alt="Logo")
+    nav.app-header__nav
+        NuxtLink.app-header__nav__link( v-for="link in links" :to="link.route") {{ link.text }}
+        NuxtLink.app-header__nav__link.pointer(
+            @click="openModal"
+        ) Contacto 
 </template>
 
 <style scoped lang="scss">
-.header {
+.app-header {
     position: fixed;
     width: 100vw;
     background: colors.$base;
@@ -62,5 +62,8 @@ header.header
             }
         }
     }
+}
+.pointer {
+    cursor: pointer;
 }
 </style>

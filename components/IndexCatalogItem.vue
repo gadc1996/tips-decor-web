@@ -1,8 +1,4 @@
 <script lang="ts" setup>
-import { onMounted } from "vue";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger.js"
-
 interface Category  {
   name: string,
   image: string
@@ -17,22 +13,6 @@ function isEven(number: number) : boolean {
   return (number + 1) % 2 === 0
 }
 
-gsap.registerPlugin(ScrollTrigger)
-
-onMounted(() => {
-  ScrollTrigger.batch('.index-catalog-item', {
-      start: "400px bottom",
-      onEnter: batch => {
-      gsap.fromTo(batch, {
-      }, {
-        opacity: 100,
-        time: 2,
-        y: 0
-      });
-        
-      },
-  })
-})
 </script>
 
 <template lang="pug">
@@ -53,9 +33,11 @@ NuxtLink(to='/').index-catalog-item(:class="{ right: isEven(index) }")
   text-decoration: none;
   align-self: flex-start;
   color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: all 0.5s ease-in;
   &:visited { color: inherit; }
   &:hover { 
-    transform: scale(2);
+    transform: scale(1.05);
   }
 
   &__base {

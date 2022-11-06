@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+import { onMounted } from "vue";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger.js"
+
 interface Note {
   id: number,
   title: string,
@@ -37,6 +41,25 @@ const notes: Note[] = [
     img: '/img/notes6.jpg',
   },
 ]
+
+gsap.registerPlugin(ScrollTrigger)
+
+onMounted(() => {
+  const reveal = {
+    opacity: 100,
+  }
+  
+  const hide = {
+    opacity: 0,
+    
+  }
+  ScrollTrigger.batch('.index-notes-item', {
+      start: "100px bottom",
+      onEnter: batch => {
+        gsap.fromTo(batch, hide, reveal);
+      },
+  })
+})
 </script>
 
 <template lang="pug">

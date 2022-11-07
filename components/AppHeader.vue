@@ -12,17 +12,15 @@ const links: Link[] =  [
     },
     {
         text: 'Catalogo',
-        route: '/catalogo',
+        route: '/categories',
         
     },
     {
         text: 'Notas',
-        route: '/notas',
+        route: '/notes',
         
     },
 ]
-
-function openModal() { useIsModalVisible().value = true }
 </script>
 
 <template lang="pug">
@@ -31,7 +29,7 @@ header.app-header
     nav.app-header__nav
         NuxtLink.app-header__nav__link( v-for="link in links" :to="link.route") {{ link.text }}
         NuxtLink.app-header__nav__link.pointer(
-            @click="openModal"
+            @click="useOpenModal()"
         ) Contacto 
 </template>
 

@@ -32,7 +32,6 @@ onMounted(async () => {
 <style scoped lang="scss">
 .about-us-wrapper-information {
   text-align: left;
-  padding-left: 10%;
   margin: 1rem 0;
   &__title {
     font-size: 36px;

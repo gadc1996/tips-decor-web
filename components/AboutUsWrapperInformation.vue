@@ -31,7 +31,9 @@ const counters: Counter[] = [
       :counter="counter"
 
     )
-  button.about-us-wrapper-information__action Contactanos
+  button.about-us-wrapper-information__action(
+    @click="useOpenModal()"
+  ) Contactanos
 </template>
 
 <style lang="scss" scoped>
@@ -48,7 +50,7 @@ const counters: Counter[] = [
   
   &__text {
     font-weight: 400;
-    font-size: 36px;
+    font-size: 25px;
     line-height: 42px;
     width: 80%;
     margin: 0 auto;
@@ -68,6 +70,7 @@ const counters: Counter[] = [
     margin-top: 2rem;
     font-size: 20px;
     line-height: 23px;
+    border: 1px solid gray;
   }
 }
 </style>

@@ -1,7 +1,8 @@
 <script lang="ts" setup>
-interface Category  {
+export interface Category {
+  id: number,
   name: string,
-  image: string
+  image: string,
 }
 
 defineProps<{
@@ -16,7 +17,10 @@ function isEven(number: number) : boolean {
 </script>
 
 <template lang="pug">
-NuxtLink(to='/').index-catalog-item(:class="{ right: isEven(index) }")
+NuxtLink.index-catalog-item(
+  :class="{ right: isEven(index) }"
+  :to="`/category/${category.id}`"
+)
   .index-catalog-item__base
   img.index-catalog-item__img(:src="category.image")
   .index-catalog-item__name(to="/") {{ category.name }}

@@ -11,7 +11,7 @@ defineProps<{
 </script>
 
 <template lang="pug">
-NuxtLink.index-notes-item(:to="`/notes/${note.id}`")
+NuxtLink.index-notes-item(:to="`/note/${note.id}`")
   img.index-notes-item__img(:src="note.img")
   h2.index-notes-item__title {{ note.title }}
 </template>

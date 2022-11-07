@@ -3,30 +3,6 @@ import { onMounted } from "vue";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger.js"
 
-interface Category  {
-  name: string,
-  image: string
-}
-
-const categories: Category[] = [
-  {
-    name: 'Sillas',
-    image: 'img/chair.webp',
-  },
-  {
-    name: 'Camas',
-    image: 'img/bed.webp',
-  },
-  {
-    name: 'Buros',
-    image: 'img/bureau.webp',
-  },
-  {
-    name: 'Escritorios',
-    image: 'img/desk.webp',
-  },
-]
-
 gsap.registerPlugin(ScrollTrigger)
 
 onMounted(() => {
@@ -55,7 +31,7 @@ onMounted(() => {
   
   .index-catalog__items
     IndexCatalogItem(
-      v-for="(category, index) in categories" 
+      v-for="(category, index) in useCategories()" 
       :category="category" 
       :index="index"
     )

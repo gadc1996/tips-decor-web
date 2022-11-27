@@ -1,13 +1,11 @@
 {
     "private": true,
     "scripts": {
-        "nuxi": "nuxi",
+        "start": "npm install && node .output/server/index.mjs",
         "build": "nuxt build",
-        "dev": "nuxt dev",
+        "serve": "nuxt dev",
         "generate": "nuxt generate",
-        "preview": "nuxt preview",
-        "postinstall": "nuxt prepare",
-        "start": "npm install && node .output/server/index.mjs"
+        "preview": "nuxt preview"
     },
     "devDependencies": {
         "nuxi": "^3.0.0-rc.12",

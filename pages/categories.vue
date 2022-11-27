@@ -1,11 +1,12 @@
 <script lang="ts" setup>
+const categories = await useCategories()
 </script>
 <template lang="pug">
 .categories
   h1.categories__title Categorias
   .categories__cards
     CategoriesCard(
-      v-for="category in useCategories()"
+      v-for="category in categories"
       :category="category"
     )
 </template>

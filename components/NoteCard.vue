@@ -13,7 +13,7 @@ defineProps<{
 
 <template lang="pug">
 NuxtLink.note-card(:to="`/note/${note.id}`")
-  img.note-card__img(:src="note.image")
+  img.note-card__img(:src="note.image.presigned_url")
   h2.note-card__title {{ note.title }}
 </template>
 

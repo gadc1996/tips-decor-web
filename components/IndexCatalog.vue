@@ -22,6 +22,7 @@ onMounted(() => {
   })
 })
 
+const categories = await useCategories()
 </script>
 
 <template lang="pug">
@@ -31,7 +32,7 @@ onMounted(() => {
   
   .index-catalog__items
     IndexCatalogItem(
-      v-for="(category, index) in useCategories()" 
+      v-for="(category, index) in categories" 
       :category="category" 
       :index="index"
     )

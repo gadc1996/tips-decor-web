@@ -1,9 +1,13 @@
+<script lang="ts" setup>
+const notes = await useNotes()
+</script>
+
 <template lang="pug">
 .notes
   h1.notes__title Notes
   .notes__cards
     NoteCard(
-      v-for="note in useNotes()"
+      v-for="note in notes"
       :note="note"
     )
 </template>

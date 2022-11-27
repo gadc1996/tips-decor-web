@@ -9,39 +9,8 @@ interface Note {
   img: string
 }
 
-const notes: Note[] = [
-  {
-    id: 1,
-    title: 'Sed efficitur sed est vitae lao',
-    img: '/img/notes1.jpg',
-  },
-  {
-    id: 2,
-    title: 'Sed efficitur sed est vitae lao',
-    img: '/img/notes2.jpg',
-  },
-  {
-    id: 3,
-    title: 'Sed efficitur sed est vitae lao',
-    img: '/img/notes3.jpg',
-  },
-  {
-    id: 4,
-    title: 'Sed efficitur sed est vitae lao',
-    img: '/img/notes4.jpg',
-  },
-  {
-    id: 5,
-    title: 'Sed efficitur sed est vitae lao',
-    img: '/img/notes5.jpg',
-  },
-  {
-    id: 6,
-    title: 'Sed efficitur sed est vitae lao',
-    img: '/img/notes6.jpg',
-  },
-]
 
+const notes = await useNotes()
 gsap.registerPlugin(ScrollTrigger)
 
 onMounted(() => {

@@ -1,31 +1,5 @@
 <script lang="ts" setup>
-interface Product {
-  id: number,
-  name: string,
-  image: string
-}
-const products: Product[] = [
-    {
-      id: 1,
-      name: 'Sillas',
-      image: '/img/chair.webp',
-    },
-    {
-      id: 2,
-      name: 'Camas',
-      image: '/img/bed.webp',
-    },
-    {
-      id: 3,
-      name: 'Buros',
-      image: '/img/bureau.webp',
-    },
-    {
-      id: 4,
-      name: 'Escritorios',
-      image: '/img/desk.webp',
-    },
-] 
+const products = await useProducts(1)
 </script>
 
 <template lang="pug">

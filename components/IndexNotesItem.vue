@@ -12,7 +12,7 @@ defineProps<{
 
 <template lang="pug">
 NuxtLink.index-notes-item(:to="`/note/${note.id}`")
-  img.index-notes-item__img(:src="note.img")
+  img.index-notes-item__img(:src="note.image.presigned_url")
   h2.index-notes-item__title {{ note.title }}
 </template>
 

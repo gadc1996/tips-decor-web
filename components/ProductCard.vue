@@ -12,7 +12,7 @@ defineProps<{
 
 <template lang="pug">
 .product-card
-  img.product-card__img(:src="product.image")
+  img.product-card__img(:src="product.image.presigned_url")
   h2.product-card__title {{ product.name }}
 </template>
 

@@ -12,7 +12,7 @@ defineProps<{
 
 <template lang="pug">
 NuxtLink.categories-card(:to="`/category/${category.id}`")
-  img.categories-card__img(:src="category.image")
+  img.categories-card__img(:src="category.image.presigned_url")
   h2.categories-card__title {{ category.name }}
 </template>
 

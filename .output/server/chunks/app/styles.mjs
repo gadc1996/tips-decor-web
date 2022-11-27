@@ -40,26 +40,26 @@ const styles = {
   "components/IndexHero.vue": () => import('./_nuxt/IndexHero-styles.654d9600.mjs').then(interopDefault),
   "components/IndexCatalog.vue": () => import('./_nuxt/IndexCatalog-styles.e5586b76.mjs').then(interopDefault),
   "components/IndexTestimonials.vue": () => import('./_nuxt/IndexTestimonials-styles.c5daca4e.mjs').then(interopDefault),
+  "layouts/default.vue": () => import('./_nuxt/default-styles.6a02b60b.mjs').then(interopDefault),
   "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": () => import('./_nuxt/error-404-styles.3db9fdd2.mjs').then(interopDefault),
   "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue": () => import('./_nuxt/error-500-styles.ad145178.mjs').then(interopDefault),
-  "layouts/default.vue": () => import('./_nuxt/default-styles.6a02b60b.mjs').then(interopDefault),
   "components/IndexNotes.vue": () => import('./_nuxt/IndexNotes-styles.922cbbbc.mjs').then(interopDefault),
   "components/IndexHeroMessage.vue": () => import('./_nuxt/IndexHeroMessage-styles.8a65e86f.mjs').then(interopDefault),
   "components/IndexCatalogDecoration.vue": () => import('./_nuxt/IndexCatalogDecoration-styles.5a601dbf.mjs').then(interopDefault),
   "pages/categories.vue": () => import('./_nuxt/categories-styles.fe134e9b.mjs').then(interopDefault),
-  "pages/note/[id].vue": () => import('./_nuxt/_id_-styles.070c6838.mjs').then(interopDefault),
   "pages/category/[id].vue": () => import('./_nuxt/_id_-styles.04b8d89b.mjs').then(interopDefault),
+  "pages/note/[id].vue": () => import('./_nuxt/_id_-styles.070c6838.mjs').then(interopDefault),
   "pages/notes.vue": () => import('./_nuxt/notes-styles.c17c984c.mjs').then(interopDefault),
   "components/AboutUsWrapperInformationCounter.vue": () => import('./_nuxt/AboutUsWrapperInformationCounter-styles.fc72521f.mjs').then(interopDefault),
-  "components/IndexCatalogItem.vue": () => import('./_nuxt/IndexCatalogItem-styles.46467c4e.mjs').then(interopDefault),
   "components/IndexTestimonialsDecoration.vue": () => import('./_nuxt/IndexTestimonialsDecoration-styles.54ace8e3.mjs').then(interopDefault),
-  "components/AppContactModal.vue": () => import('./_nuxt/AppContactModal-styles.1e189c54.mjs').then(interopDefault),
+  "components/IndexCatalogItem.vue": () => import('./_nuxt/IndexCatalogItem-styles.46467c4e.mjs').then(interopDefault),
   "components/AppHeader.vue": () => import('./_nuxt/AppHeader-styles.a2c76bfc.mjs').then(interopDefault),
+  "components/AppContactModal.vue": () => import('./_nuxt/AppContactModal-styles.1e189c54.mjs').then(interopDefault),
   "components/AppFooter.vue": () => import('./_nuxt/AppFooter-styles.06f18d5b.mjs').then(interopDefault),
   "components/IndexHeroMessageArrow.vue": () => import('./_nuxt/IndexHeroMessageArrow-styles.c64821f6.mjs').then(interopDefault),
-  "components/ProductCard.vue": () => import('./_nuxt/ProductCard-styles.5ff6e5a3.mjs').then(interopDefault),
   "components/CategoriesCard.vue": () => import('./_nuxt/CategoriesCard-styles.2a1765f0.mjs').then(interopDefault),
   "components/NoteCard.vue": () => import('./_nuxt/NoteCard-styles.e3b26f2a.mjs').then(interopDefault),
+  "components/ProductCard.vue": () => import('./_nuxt/ProductCard-styles.5ff6e5a3.mjs').then(interopDefault),
   "components/IndexNotesItem.vue": () => import('./_nuxt/IndexNotesItem-styles.4cc3077e.mjs').then(interopDefault),
   "components/AppContactModalLoader.vue": () => import('./_nuxt/AppContactModalLoader-styles.3fa64a5d.mjs').then(interopDefault),
   "components/AppContactModalForm.vue": () => import('./_nuxt/AppContactModalForm-styles.426e6bf6.mjs').then(interopDefault),
@@ -71,5 +71,5 @@ const styles$1 = /*#__PURE__*/Object.freeze({
   'default': styles
 });
 
-export { AboutUsWrapperInformation_vue_vue_type_style_index_0_scoped_141698a5_lang as A, CategoriesCard_vue_vue_type_style_index_0_scoped_ecb53d32_lang as C, IndexHero_vue_vue_type_style_index_0_scoped_4fe6ba01_lang as I, NoteCard_vue_vue_type_style_index_0_scoped_e2303c9b_lang as N, ProductCard_vue_vue_type_style_index_0_scoped_796251c2_lang as P, app_vue_vue_type_style_index_0_lang as a, IndexCatalog_vue_vue_type_style_index_0_scoped_b373cb69_lang as b, IndexTestimonials_vue_vue_type_style_index_0_scoped_fce426da_lang as c, IndexNotes_vue_vue_type_style_index_0_scoped_100bb98c_lang as d, IndexHeroMessage_vue_vue_type_style_index_0_scoped_dd2f45ff_lang as e, IndexCatalogDecoration_vue_vue_type_style_index_0_scoped_889689c3_lang as f, AboutUsWrapperInformationCounter_vue_vue_type_style_index_0_scoped_e26230a8_lang as g, IndexCatalogItem_vue_vue_type_style_index_0_scoped_dc194aca_lang as h, IndexTestimonialsDecoration_vue_vue_type_style_index_0_scoped_c0249577_lang as i, IndexHeroMessageArrow_vue_vue_type_style_index_0_scoped_a39a07db_lang as j, IndexNotesItem_vue_vue_type_style_index_0_scoped_e82385b8_lang as k, styles$1 as s };
+export { AboutUsWrapperInformation_vue_vue_type_style_index_0_scoped_141698a5_lang as A, CategoriesCard_vue_vue_type_style_index_0_scoped_ecb53d32_lang as C, IndexHero_vue_vue_type_style_index_0_scoped_4fe6ba01_lang as I, NoteCard_vue_vue_type_style_index_0_scoped_e2303c9b_lang as N, ProductCard_vue_vue_type_style_index_0_scoped_796251c2_lang as P, app_vue_vue_type_style_index_0_lang as a, IndexCatalog_vue_vue_type_style_index_0_scoped_b373cb69_lang as b, IndexTestimonials_vue_vue_type_style_index_0_scoped_fce426da_lang as c, IndexNotes_vue_vue_type_style_index_0_scoped_100bb98c_lang as d, IndexHeroMessage_vue_vue_type_style_index_0_scoped_dd2f45ff_lang as e, IndexCatalogDecoration_vue_vue_type_style_index_0_scoped_889689c3_lang as f, AboutUsWrapperInformationCounter_vue_vue_type_style_index_0_scoped_e26230a8_lang as g, IndexTestimonialsDecoration_vue_vue_type_style_index_0_scoped_c0249577_lang as h, IndexCatalogItem_vue_vue_type_style_index_0_scoped_dc194aca_lang as i, IndexHeroMessageArrow_vue_vue_type_style_index_0_scoped_a39a07db_lang as j, IndexNotesItem_vue_vue_type_style_index_0_scoped_e82385b8_lang as k, styles$1 as s };
 //# sourceMappingURL=styles.mjs.map

@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   build: {
     transpile: ['gsap']
   },
+  nitro: {
+     preset: 'node-server'
+  },
   vite: {
     css: {
       preprocessorOptions: {

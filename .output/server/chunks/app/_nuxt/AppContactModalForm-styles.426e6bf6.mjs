@@ -1,0 +1,6 @@
+const AppContactModalForm_vue_vue_type_style_index_0_scoped_d5c23917_lang = ".app-contact-modal-form[data-v-d5c23917]{font-size:30px}.app-contact-modal-form__title[data-v-d5c23917]{font-size:30px;font-weight:500;width:500px}.app-contact-modal-form__label[data-v-d5c23917]{display:block;font-size:30px;font-weight:400;line-height:23px;margin:.5rem 0}.app-contact-modal-form__input[data-v-d5c23917]{border-radius:5px;font-size:30px;height:50px;margin-bottom:2rem;width:500px}.app-contact-modal-form__textarea[data-v-d5c23917]{height:200px;margin-bottom:2rem;width:500px}.app-contact-modal-form__actions__close[data-v-d5c23917],.app-contact-modal-form__actions__submit[data-v-d5c23917]{cursor:pointer}.app-contact-modal-form__actions__submit[data-v-d5c23917]{background:#77937d;border-radius:5px;font-size:30px;padding:10px 20px}.app-contact-modal-form__actions__close[data-v-d5c23917]{background:transparent;border:none;font-size:25px;font-weight:200;padding:10px 20px}";
+
+const AppContactModalFormStyles_426e6bf6 = [AppContactModalForm_vue_vue_type_style_index_0_scoped_d5c23917_lang];
+
+export { AppContactModalFormStyles_426e6bf6 as default };
+//# sourceMappingURL=AppContactModalForm-styles.426e6bf6.mjs.map

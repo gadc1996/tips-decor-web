@@ -1,0 +1,1 @@
+import{l as s}from"./entry.4744035a.js";const e=()=>s("isModalVisible",()=>!1),a=()=>s("isSubmiting",()=>!1),l=()=>s("isSubmited",()=>!1),i=()=>{e().value=!1,a().value=!1,l().value=!1},t=()=>{e().value=!0};export{a,l as b,i as c,e as d,t as u};

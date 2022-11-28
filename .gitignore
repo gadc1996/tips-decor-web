@@ -5,7 +5,7 @@
 .cache
 # .output
 .env
-dist
+/dist
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*

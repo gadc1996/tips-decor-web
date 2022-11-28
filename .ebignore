@@ -1,11 +1,11 @@
-node_modules
+/node_modules/
 *.log*
 .nuxt
 .nitro
 .cache
-.output
+# .output
 .env
-dist
+/dist
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*

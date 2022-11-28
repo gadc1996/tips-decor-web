@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     transpile: ['gsap']
   },
   nitro: {
-     preset: 'node-server'
+    preset: 'node-server'
   },
   vite: {
     css: {

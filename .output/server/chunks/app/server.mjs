@@ -1044,6 +1044,9 @@ const useAxiosGet = async (request) => {
       Authorization: `Bearer ${token}`
     }
   }).catch((e) => {
+    if (e.response.status === 401 && false) {
+      localStorage.removeItem("TIPS_DECOR_TOKEN");
+    }
   });
 };
 const useCategories = async () => {
@@ -5040,14 +5043,14 @@ const _sfc_main$8 = /* @__PURE__ */ defineComponent({
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           var _a, _b;
           if (_push2) {
-            _push2(`<img class="index-catalog-item__img"${ssrRenderAttr("src", (_a = __props.category.image) == null ? void 0 : _a.presigned_url)} data-v-dc194aca${_scopeId}><div class="index-catalog-item__title"${ssrRenderAttr("to", `categories/${__props.category.id}`)} data-v-dc194aca${_scopeId}>${ssrInterpolate(__props.category.name)}</div>`);
+            _push2(`<img class="index-catalog-item__img"${ssrRenderAttr("src", (_a = __props.category.image) == null ? void 0 : _a.presigned_url)} data-v-173e5340${_scopeId}><h3 class="index-catalog-item__title"${ssrRenderAttr("to", `categories/${__props.category.id}`)} data-v-173e5340${_scopeId}>${ssrInterpolate(__props.category.name)}</h3>`);
           } else {
             return [
               createVNode("img", {
                 class: "index-catalog-item__img",
                 src: (_b = __props.category.image) == null ? void 0 : _b.presigned_url
               }, null, 8, ["src"]),
-              createVNode("div", {
+              createVNode("h3", {
                 class: "index-catalog-item__title",
                 to: `categories/${__props.category.id}`
               }, toDisplayString(__props.category.name), 9, ["to"])
@@ -5065,7 +5068,7 @@ _sfc_main$8.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/IndexCatalogItem.vue");
   return _sfc_setup$8 ? _sfc_setup$8(props, ctx) : void 0;
 };
-const __nuxt_component_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-dc194aca"]]);
+const __nuxt_component_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-173e5340"]]);
 function _defineProperties(target, props) {
   for (var i = 0; i < props.length; i++) {
     var descriptor = props[i];
@@ -7283,7 +7286,7 @@ const _routes = [
     meta: meta$5,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/about-us.b691da73.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/about-us.0b21bda4.mjs').then((m) => m.default || m)
   },
   {
     name: "categories",
@@ -7293,7 +7296,7 @@ const _routes = [
     meta: meta$4,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/categories.fd573cac.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/categories.0081c216.mjs').then((m) => m.default || m)
   },
   {
     name: "category-id",
@@ -7303,7 +7306,7 @@ const _routes = [
     meta: meta$3,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_id_.294e9bb5.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_id_.8ce9eba7.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -7313,7 +7316,7 @@ const _routes = [
     meta: meta$2,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index.29d9f9e3.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index.56b4ecee.mjs').then((m) => m.default || m)
   },
   {
     name: "note-id",
@@ -7323,7 +7326,7 @@ const _routes = [
     meta: meta$1,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_id_.61db4f68.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_id_.798df9e6.mjs').then((m) => m.default || m)
   },
   {
     name: "notes",
@@ -7333,7 +7336,7 @@ const _routes = [
     meta,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/notes.c7d231b3.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/notes.c7646ab5.mjs').then((m) => m.default || m)
   }
 ];
 const configRouterOptions = {};
@@ -7494,7 +7497,7 @@ const _sfc_main$1 = {
   __name: "nuxt-root",
   __ssrInlineRender: true,
   setup(__props) {
-    const ErrorComponent = defineAsyncComponent(() => import('./_nuxt/error-component.73ccc0ef.mjs').then((r) => r.default || r));
+    const ErrorComponent = defineAsyncComponent(() => import('./_nuxt/error-component.566c394d.mjs').then((r) => r.default || r));
     const nuxtApp = useNuxtApp();
     nuxtApp.deferHydration();
     provide("_route", useRoute());
@@ -7539,7 +7542,7 @@ const _wrapIf = (component, props, slots) => {
   return { default: () => props ? h(component, props === true ? {} : props, slots) : h(Fragment, {}, slots) };
 };
 const layouts = {
-  default: () => import('./_nuxt/default.a0db4971.mjs').then((m) => m.default || m)
+  default: () => import('./_nuxt/default.19aa32bd.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   props: {

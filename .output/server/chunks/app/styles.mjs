@@ -14,7 +14,7 @@ const IndexHero_vue_vue_type_style_index_0_scoped_d031ec6d_lang = ".index-hero[d
 
 const IndexCatalogDecoration_vue_vue_type_style_index_0_scoped_889689c3_lang = ".index-catalog-decoration[data-v-889689c3]{position:absolute;z-index:-1}";
 
-const IndexCatalogItem_vue_vue_type_style_index_0_scoped_dc194aca_lang = ".index-catalog-item[data-v-dc194aca]{color:#000;margin:2rem 0;text-decoration:none;transition:all .5s linear;width:30%}.index-catalog-item[data-v-dc194aca]:hover{transform:scale(1.1)}.index-catalog-item__img[data-v-dc194aca]{height:250px;width:100%}.right[data-v-dc194aca]{align-self:flex-end}";
+const IndexCatalogItem_vue_vue_type_style_index_0_scoped_173e5340_lang = ".index-catalog-item[data-v-173e5340]{color:#000;margin:2rem 0;text-decoration:none;transition:all .5s linear;width:30%}.index-catalog-item[data-v-173e5340]:hover{transform:scale(1.1)}.index-catalog-item__img[data-v-173e5340]{border-radius:15px;height:250px;width:100%}.index-catalog-item__title[data-v-173e5340]{color:rgba(0,0,0,.7);font-size:1.5rem}.right[data-v-173e5340]{align-self:flex-end}";
 
 const IndexCatalog_vue_vue_type_style_index_0_scoped_b373cb69_lang = ".index-catalog__title[data-v-b373cb69]{display:inline-block;font-size:42px;font-weight:400;line-height:49px;margin-left:9rem;margin-top:5rem}.index-catalog__items[data-v-b373cb69]{display:flex;flex-direction:column;margin:0 auto;width:70%}";
 
@@ -32,7 +32,7 @@ const app_vue_vue_type_style_index_0_lang = "body{box-sizing:border-box;font-fam
 
 const interopDefault = r => r.default || r || [];
 const styles = {
-  entry: () => [AboutUsWrapperInformationCounter_vue_vue_type_style_index_0_scoped_e26230a8_lang, AboutUsWrapperInformation_vue_vue_type_style_index_0_scoped_141698a5_lang, CategoriesCard_vue_vue_type_style_index_0_scoped_ecb53d32_lang, ProductCard_vue_vue_type_style_index_0_scoped_796251c2_lang, IndexHeroMessageArrow_vue_vue_type_style_index_0_scoped_a39a07db_lang, IndexHeroMessage_vue_vue_type_style_index_0_scoped_d7d1e2e3_lang, IndexHero_vue_vue_type_style_index_0_scoped_d031ec6d_lang, IndexCatalogDecoration_vue_vue_type_style_index_0_scoped_889689c3_lang, IndexCatalogItem_vue_vue_type_style_index_0_scoped_dc194aca_lang, IndexCatalog_vue_vue_type_style_index_0_scoped_b373cb69_lang, IndexTestimonialsDecoration_vue_vue_type_style_index_0_scoped_c0249577_lang, IndexTestimonials_vue_vue_type_style_index_0_scoped_fce426da_lang, IndexNotesItem_vue_vue_type_style_index_0_scoped_e82385b8_lang, IndexNotes_vue_vue_type_style_index_0_scoped_100bb98c_lang, NoteCard_vue_vue_type_style_index_0_scoped_e2303c9b_lang, app_vue_vue_type_style_index_0_lang],
+  entry: () => [AboutUsWrapperInformationCounter_vue_vue_type_style_index_0_scoped_e26230a8_lang, AboutUsWrapperInformation_vue_vue_type_style_index_0_scoped_141698a5_lang, CategoriesCard_vue_vue_type_style_index_0_scoped_ecb53d32_lang, ProductCard_vue_vue_type_style_index_0_scoped_796251c2_lang, IndexHeroMessageArrow_vue_vue_type_style_index_0_scoped_a39a07db_lang, IndexHeroMessage_vue_vue_type_style_index_0_scoped_d7d1e2e3_lang, IndexHero_vue_vue_type_style_index_0_scoped_d031ec6d_lang, IndexCatalogDecoration_vue_vue_type_style_index_0_scoped_889689c3_lang, IndexCatalogItem_vue_vue_type_style_index_0_scoped_173e5340_lang, IndexCatalog_vue_vue_type_style_index_0_scoped_b373cb69_lang, IndexTestimonialsDecoration_vue_vue_type_style_index_0_scoped_c0249577_lang, IndexTestimonials_vue_vue_type_style_index_0_scoped_fce426da_lang, IndexNotesItem_vue_vue_type_style_index_0_scoped_e82385b8_lang, IndexNotes_vue_vue_type_style_index_0_scoped_100bb98c_lang, NoteCard_vue_vue_type_style_index_0_scoped_e2303c9b_lang, app_vue_vue_type_style_index_0_lang],
   "app.vue": () => import('./_nuxt/app-styles.2cbf72bd.mjs').then(interopDefault),
   "pages/about-us.vue": () => import('./_nuxt/about-us-styles.8a95aca3.mjs').then(interopDefault),
   "pages/index.vue": () => import('./_nuxt/index-styles.c31c1f4f.mjs').then(interopDefault),
@@ -40,27 +40,27 @@ const styles = {
   "components/IndexHero.vue": () => import('./_nuxt/IndexHero-styles.328438b2.mjs').then(interopDefault),
   "components/IndexCatalog.vue": () => import('./_nuxt/IndexCatalog-styles.e5586b76.mjs').then(interopDefault),
   "components/IndexTestimonials.vue": () => import('./_nuxt/IndexTestimonials-styles.c5daca4e.mjs').then(interopDefault),
+  "layouts/default.vue": () => import('./_nuxt/default-styles.6a02b60b.mjs').then(interopDefault),
   "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": () => import('./_nuxt/error-404-styles.3db9fdd2.mjs').then(interopDefault),
   "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue": () => import('./_nuxt/error-500-styles.ad145178.mjs').then(interopDefault),
-  "layouts/default.vue": () => import('./_nuxt/default-styles.6a02b60b.mjs').then(interopDefault),
   "components/IndexNotes.vue": () => import('./_nuxt/IndexNotes-styles.922cbbbc.mjs').then(interopDefault),
   "pages/categories.vue": () => import('./_nuxt/categories-styles.fe134e9b.mjs').then(interopDefault),
-  "pages/note/[id].vue": () => import('./_nuxt/_id_-styles.070c6838.mjs').then(interopDefault),
   "pages/category/[id].vue": () => import('./_nuxt/_id_-styles.04b8d89b.mjs').then(interopDefault),
+  "pages/note/[id].vue": () => import('./_nuxt/_id_-styles.070c6838.mjs').then(interopDefault),
   "pages/notes.vue": () => import('./_nuxt/notes-styles.c17c984c.mjs').then(interopDefault),
   "components/IndexHeroMessage.vue": () => import('./_nuxt/IndexHeroMessage-styles.0cd4cbe4.mjs').then(interopDefault),
-  "components/IndexTestimonialsDecoration.vue": () => import('./_nuxt/IndexTestimonialsDecoration-styles.54ace8e3.mjs').then(interopDefault),
   "components/IndexCatalogDecoration.vue": () => import('./_nuxt/IndexCatalogDecoration-styles.5a601dbf.mjs').then(interopDefault),
   "components/AboutUsWrapperInformationCounter.vue": () => import('./_nuxt/AboutUsWrapperInformationCounter-styles.fc72521f.mjs').then(interopDefault),
-  "components/IndexCatalogItem.vue": () => import('./_nuxt/IndexCatalogItem-styles.46467c4e.mjs').then(interopDefault),
+  "components/IndexTestimonialsDecoration.vue": () => import('./_nuxt/IndexTestimonialsDecoration-styles.54ace8e3.mjs').then(interopDefault),
+  "components/IndexCatalogItem.vue": () => import('./_nuxt/IndexCatalogItem-styles.beb95cae.mjs').then(interopDefault),
   "components/AppHeader.vue": () => import('./_nuxt/AppHeader-styles.a2c76bfc.mjs').then(interopDefault),
   "components/AppContactModal.vue": () => import('./_nuxt/AppContactModal-styles.1e189c54.mjs').then(interopDefault),
   "components/AppFooter.vue": () => import('./_nuxt/AppFooter-styles.06f18d5b.mjs').then(interopDefault),
-  "components/CategoriesCard.vue": () => import('./_nuxt/CategoriesCard-styles.2a1765f0.mjs').then(interopDefault),
-  "components/NoteCard.vue": () => import('./_nuxt/NoteCard-styles.e3b26f2a.mjs').then(interopDefault),
-  "components/ProductCard.vue": () => import('./_nuxt/ProductCard-styles.5ff6e5a3.mjs').then(interopDefault),
-  "components/IndexNotesItem.vue": () => import('./_nuxt/IndexNotesItem-styles.4cc3077e.mjs').then(interopDefault),
   "components/IndexHeroMessageArrow.vue": () => import('./_nuxt/IndexHeroMessageArrow-styles.c64821f6.mjs').then(interopDefault),
+  "components/CategoriesCard.vue": () => import('./_nuxt/CategoriesCard-styles.2a1765f0.mjs').then(interopDefault),
+  "components/ProductCard.vue": () => import('./_nuxt/ProductCard-styles.5ff6e5a3.mjs').then(interopDefault),
+  "components/NoteCard.vue": () => import('./_nuxt/NoteCard-styles.e3b26f2a.mjs').then(interopDefault),
+  "components/IndexNotesItem.vue": () => import('./_nuxt/IndexNotesItem-styles.4cc3077e.mjs').then(interopDefault),
   "components/AppContactModalLoader.vue": () => import('./_nuxt/AppContactModalLoader-styles.3fa64a5d.mjs').then(interopDefault),
   "components/AppContactModalForm.vue": () => import('./_nuxt/AppContactModalForm-styles.426e6bf6.mjs').then(interopDefault),
   "components/AppContactModalThankYou.vue": () => import('./_nuxt/AppContactModalThankYou-styles.dc978c5f.mjs').then(interopDefault)
@@ -71,5 +71,5 @@ const styles$1 = /*#__PURE__*/Object.freeze({
   'default': styles
 });
 
-export { AboutUsWrapperInformation_vue_vue_type_style_index_0_scoped_141698a5_lang as A, CategoriesCard_vue_vue_type_style_index_0_scoped_ecb53d32_lang as C, IndexHero_vue_vue_type_style_index_0_scoped_d031ec6d_lang as I, NoteCard_vue_vue_type_style_index_0_scoped_e2303c9b_lang as N, ProductCard_vue_vue_type_style_index_0_scoped_796251c2_lang as P, app_vue_vue_type_style_index_0_lang as a, IndexCatalog_vue_vue_type_style_index_0_scoped_b373cb69_lang as b, IndexTestimonials_vue_vue_type_style_index_0_scoped_fce426da_lang as c, IndexNotes_vue_vue_type_style_index_0_scoped_100bb98c_lang as d, IndexHeroMessage_vue_vue_type_style_index_0_scoped_d7d1e2e3_lang as e, IndexTestimonialsDecoration_vue_vue_type_style_index_0_scoped_c0249577_lang as f, IndexCatalogDecoration_vue_vue_type_style_index_0_scoped_889689c3_lang as g, AboutUsWrapperInformationCounter_vue_vue_type_style_index_0_scoped_e26230a8_lang as h, IndexCatalogItem_vue_vue_type_style_index_0_scoped_dc194aca_lang as i, IndexNotesItem_vue_vue_type_style_index_0_scoped_e82385b8_lang as j, IndexHeroMessageArrow_vue_vue_type_style_index_0_scoped_a39a07db_lang as k, styles$1 as s };
+export { AboutUsWrapperInformation_vue_vue_type_style_index_0_scoped_141698a5_lang as A, CategoriesCard_vue_vue_type_style_index_0_scoped_ecb53d32_lang as C, IndexHero_vue_vue_type_style_index_0_scoped_d031ec6d_lang as I, NoteCard_vue_vue_type_style_index_0_scoped_e2303c9b_lang as N, ProductCard_vue_vue_type_style_index_0_scoped_796251c2_lang as P, app_vue_vue_type_style_index_0_lang as a, IndexCatalog_vue_vue_type_style_index_0_scoped_b373cb69_lang as b, IndexTestimonials_vue_vue_type_style_index_0_scoped_fce426da_lang as c, IndexNotes_vue_vue_type_style_index_0_scoped_100bb98c_lang as d, IndexHeroMessage_vue_vue_type_style_index_0_scoped_d7d1e2e3_lang as e, IndexCatalogDecoration_vue_vue_type_style_index_0_scoped_889689c3_lang as f, AboutUsWrapperInformationCounter_vue_vue_type_style_index_0_scoped_e26230a8_lang as g, IndexTestimonialsDecoration_vue_vue_type_style_index_0_scoped_c0249577_lang as h, IndexCatalogItem_vue_vue_type_style_index_0_scoped_173e5340_lang as i, IndexHeroMessageArrow_vue_vue_type_style_index_0_scoped_a39a07db_lang as j, IndexNotesItem_vue_vue_type_style_index_0_scoped_e82385b8_lang as k, styles$1 as s };
 //# sourceMappingURL=styles.mjs.map

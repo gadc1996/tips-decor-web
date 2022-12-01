@@ -3,7 +3,7 @@
 <template lang="pug">
 .index-hero-message
   h1.index-hero-message__title Bienvenido a Tips Decor
-  p.index-hero-message__content Quisque maximus mauris nec ullamcorper ornare. Sed suscipit molestie posuere. Praesent laoreet purus nec sollicitudin eleifend.
+  p.index-hero-message__content En TIP's Decor te ayudamos a crear tu interior! Contáctanos para saber más de nuestros servicios y asesoría en decoración.
   NuxtLink(to="/about-us").index-hero-message__cta Conoce Mas 
     IndexHeroMessageArrow
 </template>

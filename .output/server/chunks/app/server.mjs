@@ -890,7 +890,7 @@ var createHead = (initHeadObject) => {
     head.addEntry(initHeadObject);
   return head;
 };
-const appHead = { "meta": [{ "name": "viewport", "content": "width=device-width, initial-scale=1" }, { "charset": "utf-8" }], "link": [], "style": [], "script": [], "noscript": [] };
+const appHead = { "meta": [{ "charset": "utf-8" }, { "hid": "viewport", "property": "viewport", "name": "viewport", "content": "width=device-width, initial-scale=1" }, { "hid": "description", "property": "description", "name": "description", "content": "Asesor\xEDa en decoraci\xF3n, venta de muebles y accesorios, trabajos de remodelaci\xF3n, persianas, tapices, etc." }, { "hid": "og:type", "name": "og:type", "content": "website" }, { "hid": "og:url", "property": "og:url", "name": "og:url", "content": "https://www.tipsdecor.com.mx/" }, { "hid": "og:description", "property": "og:description", "name": "og:description", "content": "Asesor\xEDa en decoraci\xF3n, venta de muebles y accesorios, trabajos de remodelaci\xF3n, persianas, tapices, etc." }, { "hid": "og:image", "property": "og:image", "name": "og:image", "content": "https://www.tipsdecor.com.mx/logo.jpg" }], "link": [{ "rel": "stylesheet", "href": "https://awesome-lib.css" }, { "rel": "apple-touch-icon", "sizes": "180x180", "href": "/apple-touch-icon.png" }, { "rel": "icon", "type": "image/png", "sizes": "32x32", "href": "/favicon-32x32.png" }, { "rel": "icon", "type": "image/png", "sizes": "16x16", "href": "/favicon-16x16.png" }], "style": [], "script": [{ "src": "https://awesome-lib.js" }], "noscript": [], "title": "Tips Decor" };
 const appLayoutTransition = { "name": "layout", "mode": "out-in" };
 const appPageTransition = { "name": "page", "mode": "out-in" };
 const appKeepalive = false;
@@ -1091,7 +1091,7 @@ const __nuxt_component_1$2 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["ssrRend
 function ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_NuxtLink = __nuxt_component_0$b;
   const _component_IndexHeroMessageArrow = __nuxt_component_1$2;
-  _push(`<div${ssrRenderAttrs(mergeProps({ class: "index-hero-message" }, _attrs))} data-v-dd2f45ff><h1 class="index-hero-message__title" data-v-dd2f45ff>Bienvenido a Tips Decor</h1><p class="index-hero-message__content" data-v-dd2f45ff>Quisque maximus mauris nec ullamcorper ornare. Sed suscipit molestie posuere. Praesent laoreet purus nec sollicitudin eleifend.</p>`);
+  _push(`<div${ssrRenderAttrs(mergeProps({ class: "index-hero-message" }, _attrs))} data-v-d7d1e2e3><h1 class="index-hero-message__title" data-v-d7d1e2e3>Bienvenido a Tips Decor</h1><p class="index-hero-message__content" data-v-d7d1e2e3>En TIP&#39;s Decor te ayudamos a crear tu interior! Cont\xE1ctanos para saber m\xE1s de nuestros servicios y asesor\xEDa en decoraci\xF3n.</p>`);
   _push(ssrRenderComponent(_component_NuxtLink, {
     class: "index-hero-message__cta",
     to: "/about-us"
@@ -1118,7 +1118,7 @@ _sfc_main$b.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/IndexHeroMessage.vue");
   return _sfc_setup$b ? _sfc_setup$b(props, ctx) : void 0;
 };
-const __nuxt_component_0$6 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["ssrRender", ssrRender], ["__scopeId", "data-v-dd2f45ff"]]);
+const __nuxt_component_0$6 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["ssrRender", ssrRender], ["__scopeId", "data-v-d7d1e2e3"]]);
 const _imports_0 = "" + globalThis.__publicAssetsURL("img/hero.webp");
 function _assertThisInitialized(self) {
   if (self === void 0) {
@@ -7283,7 +7283,7 @@ const _routes = [
     meta: meta$5,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/about-us.4245e168.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/about-us.2e760d4b.mjs').then((m) => m.default || m)
   },
   {
     name: "categories",
@@ -7293,7 +7293,7 @@ const _routes = [
     meta: meta$4,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/categories.c2a71687.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/categories.aaaf601c.mjs').then((m) => m.default || m)
   },
   {
     name: "category-id",
@@ -7303,7 +7303,7 @@ const _routes = [
     meta: meta$3,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_id_.399b5e7c.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_id_.652975bf.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -7313,7 +7313,7 @@ const _routes = [
     meta: meta$2,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index.decba614.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index.b7724b41.mjs').then((m) => m.default || m)
   },
   {
     name: "note-id",
@@ -7323,7 +7323,7 @@ const _routes = [
     meta: meta$1,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_id_.d39987f2.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_id_.aa4f10a3.mjs').then((m) => m.default || m)
   },
   {
     name: "notes",
@@ -7333,7 +7333,7 @@ const _routes = [
     meta,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/notes.d7b0bacc.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/notes.9dcf9af4.mjs').then((m) => m.default || m)
   }
 ];
 const configRouterOptions = {};
@@ -7494,7 +7494,7 @@ const _sfc_main$1 = {
   __name: "nuxt-root",
   __ssrInlineRender: true,
   setup(__props) {
-    const ErrorComponent = defineAsyncComponent(() => import('./_nuxt/error-component.6da1e64e.mjs').then((r) => r.default || r));
+    const ErrorComponent = defineAsyncComponent(() => import('./_nuxt/error-component.9b88f46c.mjs').then((r) => r.default || r));
     const nuxtApp = useNuxtApp();
     nuxtApp.deferHydration();
     provide("_route", useRoute());
@@ -7539,7 +7539,7 @@ const _wrapIf = (component, props, slots) => {
   return { default: () => props ? h(component, props === true ? {} : props, slots) : h(Fragment, {}, slots) };
 };
 const layouts = {
-  default: () => import('./_nuxt/default.4e5e9d99.mjs').then((m) => m.default || m)
+  default: () => import('./_nuxt/default.aa9fb31d.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   props: {

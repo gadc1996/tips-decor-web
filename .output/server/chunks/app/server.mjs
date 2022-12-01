@@ -4991,9 +4991,9 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
       const _component_IndexHeroMessage = __nuxt_component_0$6;
-      _push(`<div${ssrRenderAttrs(mergeProps({ class: "index-hero" }, _attrs))} data-v-4fe6ba01>`);
+      _push(`<div${ssrRenderAttrs(mergeProps({ class: "index-hero" }, _attrs))} data-v-d031ec6d><div class="wrapper" data-v-d031ec6d>`);
       _push(ssrRenderComponent(_component_IndexHeroMessage, null, null, _parent));
-      _push(`<img class="index-hero__img"${ssrRenderAttr("src", _imports_0)} alt="hero" data-v-4fe6ba01></div>`);
+      _push(`<img class="index-hero__img"${ssrRenderAttr("src", _imports_0)} alt="hero" data-v-d031ec6d></div></div>`);
     };
   }
 });
@@ -5003,7 +5003,7 @@ _sfc_main$a.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/IndexHero.vue");
   return _sfc_setup$a ? _sfc_setup$a(props, ctx) : void 0;
 };
-const __nuxt_component_0$5 = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-4fe6ba01"]]);
+const __nuxt_component_0$5 = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-d031ec6d"]]);
 const _sfc_main$9 = {};
 function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
   _push(`<svg${ssrRenderAttrs(mergeProps({
@@ -7283,7 +7283,7 @@ const _routes = [
     meta: meta$5,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/about-us.2e760d4b.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/about-us.b691da73.mjs').then((m) => m.default || m)
   },
   {
     name: "categories",
@@ -7293,7 +7293,7 @@ const _routes = [
     meta: meta$4,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/categories.aaaf601c.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/categories.fd573cac.mjs').then((m) => m.default || m)
   },
   {
     name: "category-id",
@@ -7303,7 +7303,7 @@ const _routes = [
     meta: meta$3,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_id_.652975bf.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_id_.294e9bb5.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -7313,7 +7313,7 @@ const _routes = [
     meta: meta$2,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index.b7724b41.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index.29d9f9e3.mjs').then((m) => m.default || m)
   },
   {
     name: "note-id",
@@ -7323,7 +7323,7 @@ const _routes = [
     meta: meta$1,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_id_.aa4f10a3.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_id_.61db4f68.mjs').then((m) => m.default || m)
   },
   {
     name: "notes",
@@ -7333,7 +7333,7 @@ const _routes = [
     meta,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/notes.9dcf9af4.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/notes.c7d231b3.mjs').then((m) => m.default || m)
   }
 ];
 const configRouterOptions = {};
@@ -7494,7 +7494,7 @@ const _sfc_main$1 = {
   __name: "nuxt-root",
   __ssrInlineRender: true,
   setup(__props) {
-    const ErrorComponent = defineAsyncComponent(() => import('./_nuxt/error-component.9b88f46c.mjs').then((r) => r.default || r));
+    const ErrorComponent = defineAsyncComponent(() => import('./_nuxt/error-component.73ccc0ef.mjs').then((r) => r.default || r));
     const nuxtApp = useNuxtApp();
     nuxtApp.deferHydration();
     provide("_route", useRoute());
@@ -7539,7 +7539,7 @@ const _wrapIf = (component, props, slots) => {
   return { default: () => props ? h(component, props === true ? {} : props, slots) : h(Fragment, {}, slots) };
 };
 const layouts = {
-  default: () => import('./_nuxt/default.aa9fb31d.mjs').then((m) => m.default || m)
+  default: () => import('./_nuxt/default.a0db4971.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   props: {

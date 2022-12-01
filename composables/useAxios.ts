@@ -10,5 +10,8 @@ export const useAxiosGet = async (request: string) => {
       Authorization: `Bearer ${token}`
     }
   }).catch(e => {
+    if (e.response.status === 401 && process.client) {
+      localStorage.removeItem('TIPS_DECOR_TOKEN')
+    }
   })
 }

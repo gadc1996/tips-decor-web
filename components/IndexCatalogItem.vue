@@ -22,7 +22,7 @@ NuxtLink.index-catalog-item(
   :to="`/category/${category.id}`"
 )
   img.index-catalog-item__img(:src="category.image?.presigned_url")
-  .index-catalog-item__title(:to="`categories/${category.id}`") {{ category.name }}
+  h3.index-catalog-item__title(:to="`categories/${category.id}`") {{ category.name }}
 
 </template>
 
@@ -39,7 +39,13 @@ NuxtLink.index-catalog-item(
   &__img{
     width: 100%;
     height: 250px;
+    border-radius: 15px;
   }
+  &__title { 
+    font-size: 1.5rem;
+    color: rgba($color: #000000, $alpha: 0.7)
+    
+ }
 }
 
 .right {

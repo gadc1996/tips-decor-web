@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "start": "npm run build && node .output/server/index.mjs",
+        "start": "node .output/server/index.mjs",
         "build": "nuxt build",
         "serve": "nuxt dev",
         "generate": "nuxt generate",

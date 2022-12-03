@@ -1,4 +1,4 @@
-import { toRef, isRef, version, useSSRContext, defineComponent, h, inject, computed, unref, Suspense, Transition, provide, reactive, getCurrentInstance, ref, resolveComponent, mergeProps, withCtx, createVNode, toDisplayString, withAsyncContext, shallowRef, createApp, defineAsyncComponent, onErrorCaptured, nextTick, watchEffect, createTextVNode } from 'vue';
+import { toRef, isRef, getCurrentInstance, inject, version, useSSRContext, defineComponent, h, computed, unref, Suspense, Transition, provide, reactive, ref, resolveComponent, mergeProps, withCtx, createVNode, toDisplayString, withAsyncContext, shallowRef, createApp, defineAsyncComponent, onErrorCaptured, nextTick, watchEffect, createTextVNode } from 'vue';
 import { $fetch } from 'ohmyfetch';
 import { createHooks } from 'hookable';
 import { getContext, executeAsync } from 'unctx';
@@ -890,7 +890,7 @@ var createHead = (initHeadObject) => {
     head.addEntry(initHeadObject);
   return head;
 };
-const appHead = { "meta": [{ "charset": "utf-8" }, { "hid": "viewport", "property": "viewport", "name": "viewport", "content": "width=device-width, initial-scale=1" }, { "hid": "description", "property": "description", "name": "description", "content": "Asesor\xEDa en decoraci\xF3n, venta de muebles y accesorios, trabajos de remodelaci\xF3n, persianas, tapices, etc." }, { "hid": "og:type", "name": "og:type", "content": "website" }, { "hid": "og:url", "property": "og:url", "name": "og:url", "content": "https://www.tipsdecor.com.mx/" }, { "hid": "og:description", "property": "og:description", "name": "og:description", "content": "Asesor\xEDa en decoraci\xF3n, venta de muebles y accesorios, trabajos de remodelaci\xF3n, persianas, tapices, etc." }, { "hid": "og:image", "property": "og:image", "name": "og:image", "content": "https://www.tipsdecor.com.mx/logo.jpg" }], "link": [{ "rel": "stylesheet", "href": "https://awesome-lib.css" }, { "rel": "apple-touch-icon", "sizes": "180x180", "href": "/apple-touch-icon.png" }, { "rel": "icon", "type": "image/png", "sizes": "32x32", "href": "/favicon-32x32.png" }, { "rel": "icon", "type": "image/png", "sizes": "16x16", "href": "/favicon-16x16.png" }], "style": [], "script": [{ "src": "https://awesome-lib.js" }], "noscript": [], "title": "Tips Decor" };
+const appHead = { "meta": [{ "charset": "utf-8" }, { "hid": "viewport", "property": "viewport", "name": "viewport", "content": "width=device-width, initial-scale=1" }, { "hid": "description", "property": "description", "name": "description", "content": "Asesor\xEDa en decoraci\xF3n, venta de muebles y accesorios, trabajos de remodelaci\xF3n, persianas, tapices, etc." }, { "hid": "og:type", "name": "og:type", "content": "website" }, { "hid": "og:url", "property": "og:url", "name": "og:url", "content": "https://www.tipsdecor.com.mx/" }, { "hid": "og:description", "property": "og:description", "name": "og:description", "content": "Asesor\xEDa en decoraci\xF3n, venta de muebles y accesorios, trabajos de remodelaci\xF3n, persianas, tapices, etc." }, { "hid": "og:image", "property": "og:image", "name": "og:image", "content": "https://www.tipsdecor.com.mx/logo.jpg" }], "link": [{ "rel": "apple-touch-icon", "sizes": "180x180", "href": "/apple-touch-icon.png" }, { "rel": "icon", "type": "image/png", "sizes": "32x32", "href": "/favicon-32x32.png" }, { "rel": "icon", "type": "image/png", "sizes": "16x16", "href": "/favicon-16x16.png" }], "style": [], "script": [], "noscript": [], "title": "Tips Decor" };
 const appLayoutTransition = { "name": "layout", "mode": "out-in" };
 const appPageTransition = { "name": "page", "mode": "out-in" };
 const appKeepalive = false;
@@ -7286,7 +7286,7 @@ const _routes = [
     meta: meta$5,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/about-us.0b21bda4.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/about-us.d16edd6c.mjs').then((m) => m.default || m)
   },
   {
     name: "categories",
@@ -7296,7 +7296,7 @@ const _routes = [
     meta: meta$4,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/categories.0081c216.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/categories.ce5e649b.mjs').then((m) => m.default || m)
   },
   {
     name: "category-id",
@@ -7306,7 +7306,7 @@ const _routes = [
     meta: meta$3,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_id_.8ce9eba7.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_id_.ccb7287a.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -7316,7 +7316,7 @@ const _routes = [
     meta: meta$2,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index.56b4ecee.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index.b42e68c8.mjs').then((m) => m.default || m)
   },
   {
     name: "note-id",
@@ -7326,7 +7326,7 @@ const _routes = [
     meta: meta$1,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_id_.798df9e6.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_id_.b69e8850.mjs').then((m) => m.default || m)
   },
   {
     name: "notes",
@@ -7336,7 +7336,7 @@ const _routes = [
     meta,
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/notes.c7646ab5.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/notes.2e540cfc.mjs').then((m) => m.default || m)
   }
 ];
 const configRouterOptions = {};
@@ -7497,7 +7497,7 @@ const _sfc_main$1 = {
   __name: "nuxt-root",
   __ssrInlineRender: true,
   setup(__props) {
-    const ErrorComponent = defineAsyncComponent(() => import('./_nuxt/error-component.566c394d.mjs').then((r) => r.default || r));
+    const ErrorComponent = defineAsyncComponent(() => import('./_nuxt/error-component.f48cc6c9.mjs').then((r) => r.default || r));
     const nuxtApp = useNuxtApp();
     nuxtApp.deferHydration();
     provide("_route", useRoute());
@@ -7542,7 +7542,7 @@ const _wrapIf = (component, props, slots) => {
   return { default: () => props ? h(component, props === true ? {} : props, slots) : h(Fragment, {}, slots) };
 };
 const layouts = {
-  default: () => import('./_nuxt/default.19aa32bd.mjs').then((m) => m.default || m)
+  default: () => import('./_nuxt/default.244d3d0e.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   props: {
@@ -7712,5 +7712,5 @@ const plugins = normalizePlugins(_plugins);
 }
 const entry$1 = (ctx) => entry(ctx);
 
-export { __nuxt_component_0$9 as _, _export_sfc as a, __nuxt_component_0$8 as b, useAxiosGet as c, __nuxt_component_0$7 as d, entry$1 as default, __nuxt_component_0$5 as e, __nuxt_component_1 as f, __nuxt_component_2$1 as g, __nuxt_component_3 as h, useNotes as i, __nuxt_component_0$1 as j, useState as k, __nuxt_component_0$b as l, __nuxt_component_2 as m, useHead as n, useCategories as u };
+export { __nuxt_component_0$9 as _, _export_sfc as a, __nuxt_component_0$8 as b, useAxiosGet as c, useRoute as d, entry$1 as default, __nuxt_component_0$7 as e, __nuxt_component_0$5 as f, __nuxt_component_1 as g, __nuxt_component_2$1 as h, __nuxt_component_3 as i, useNotes as j, __nuxt_component_0$1 as k, useState as l, __nuxt_component_0$b as m, __nuxt_component_2 as n, useHead as o, useCategories as u };
 //# sourceMappingURL=server.mjs.map

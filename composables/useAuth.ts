@@ -14,11 +14,8 @@ export const useAuth = async (): Promise<string> => {
       await axios.post(url, credentials
       ).then(function (response) {
         localStorage.setItem('TIPS_DECOR_TOKEN', response.data)
-      }).catch(e => {
-        console.log(e)
       })
     } 
-    console.log('asdf')
     return localStorage.getItem('TIPS_DECOR_TOKEN')
 
   }

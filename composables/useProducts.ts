@@ -8,5 +8,5 @@ interface Product {
 
 export const useProducts = async(categoryId) => {
   const response: AxiosResponse = await useAxiosGet(`categories/${categoryId}`)
-  return response.data.products
+  return response?.data?.products
 }

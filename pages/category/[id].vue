@@ -1,5 +1,7 @@
 <script lang="ts" setup>
-const products = await useProducts(1)
+const route = useRoute()
+
+const products = await useProducts(route.params.id)
 </script>
 
 <template lang="pug">

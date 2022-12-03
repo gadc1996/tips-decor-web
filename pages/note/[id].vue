@@ -5,7 +5,9 @@ interface Note {
   content: string
 }
 
-const note = await useNote(1)
+const route = useRoute()
+
+const note = await useNote(route.params.id)
 </script>
 <template lang="pug">
 .note(v-if="note")

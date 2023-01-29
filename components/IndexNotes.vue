@@ -40,13 +40,18 @@ onMounted(() => {
 
 <style scoped lang="scss">
 .index-notes {
-  &__items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 100px;
-    width: 80%;
-    margin: 5rem auto;
-  }
+  margin-bottom: 10rem;
   &__title { @include mixins.title; }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 480px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 100px;
+      width: 80%;
+      margin: 5rem auto;
+    }
+  }
 }
 </style>

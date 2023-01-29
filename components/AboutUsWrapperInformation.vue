@@ -29,7 +29,6 @@ const counters: Counter[] = [
     AboutUsWrapperInformationCounter(
       v-for="counter in counters"
       :counter="counter"
-
     )
   button.about-us-wrapper-information__action(
     @click="useOpenModal()"
@@ -38,14 +37,22 @@ const counters: Counter[] = [
 
 <style lang="scss" scoped>
 .about-us-wrapper-information {
-  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  @media screen and (min-width: 480px) {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &__title {
-    font-weight: 400;
-    font-size: 70px;
+    width: 100%;
     text-align: center;
+    @media screen and (min-width: 480px) {
+      font-weight: 400;
+      font-size: 70px;
+      text-align: center;
+    }
   }
   
   &__text {
@@ -59,18 +66,32 @@ const counters: Counter[] = [
   
   &__counters {
     display: inline-flex;
-    width: 80%;
-    justify-content: center;
     margin: 2rem 0;
+    width: 100%;
+    @media screen and (min-width: 480px) {
+      width: 80%;
+      justify-content: center;
+      margin: 2rem 0;
+    }
   }
   &__action {
     background: colors.$base;
-    padding: 0.5rem;
     border-radius: 5px;
-    margin-top: 2rem;
-    font-size: 20px;
-    line-height: 23px;
     border: 1px solid gray;
+    width: 50%;
+    height: 40px;
+    margin: {
+      left: auto;
+      right: auto;
+      bottom: 15px;
+    }
+
+    @media screen and (min-width: 480px) {
+      padding: 0.5rem;
+      margin-top: 2rem;
+      font-size: 20px;
+      line-height: 23px;
+    }
   }
 }
 </style>

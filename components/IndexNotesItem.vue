@@ -18,10 +18,12 @@ NuxtLink.index-notes-item(:to="`/note/${note.id}`")
 
 <style scoped lang="scss">
 .index-notes-item {
+  margin: 0 auto;
   text-decoration: none;
   color: black;
   transition: all 0.5s ease-in;
   opacity: 0;
+  width: 80%;
   &:hover {
      transform: scale(1.05);
      transition: all 0.3s linear;

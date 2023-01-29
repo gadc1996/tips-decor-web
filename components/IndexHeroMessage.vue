@@ -10,10 +10,14 @@
 
 <style scoped lang="scss">
 .index-hero-message {
-  width: 30%;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    width: 30%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+  }
   &__title {
     font-style: normal;
     font-weight: 700;

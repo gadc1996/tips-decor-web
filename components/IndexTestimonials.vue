@@ -41,7 +41,6 @@ onMounted(async () => {
 .index-testimonials
   IndexTestimonialsDecoration
   h2.index-testimonials__title Testimonios
-  h2 {{ currentIndex }}
   .index-testimonials__images
     img.index-testimonials__images__before(
       v-if="isLoaded"
@@ -55,8 +54,13 @@ onMounted(async () => {
 
 <style scoped lang="scss">
 .index-testimonials {
-  min-height: 100vh;
-  &__title { @include mixins.title(20rem); }
+  position: relative;
+  &__title { 
+    @include mixins.title(); 
+    @media screen and (min-width: 480px) {
+      @include mixins.title(20rem); 
+    }
+  }
   &__images {
     display: flex;
     max-width: 1200px;
@@ -66,8 +70,9 @@ onMounted(async () => {
     &__before, 
     &__after {
       width: 40%;
-      max-width: 700px;
-      max-height: 500px;
+      max-width: 600px;
+      max-height: 400px;
+      border-radius: 15px;
     
     }
   }

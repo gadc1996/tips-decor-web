@@ -27,11 +27,11 @@ const links: Link[] = [
 
 <template lang="pug">
 nav.app-navigation
-  AppNavigationBurgerButton
-  //- NuxtLink.app-navigation__link(v-for="link in links" :to="link.route") {{ link.text }}
-  //- NuxtLink.app-navigation__link.pointer(
-  //-   @click="useOpenModal()"
-  //-   ) Contacto 
+  //- AppNavigationBurgerButton
+  NuxtLink.app-navigation__link(v-for="link in links" :to="link.route") {{ link.text }}
+  NuxtLink.app-navigation__link.pointer(
+    @click="useOpenModal()"
+    ) Contacto 
 </template>
 
 <style lang="scss">
@@ -39,18 +39,17 @@ nav.app-navigation
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 100;
-  // display: flex;
-  // justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-  // &__link {
-  //   font-size: 26px;
-  //   text-decoration: none;
-  //   color: rgba(0, 0, 0, 0.8);
+  &__link {
+    font-size: 26px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
 
-  //   &:hover {
-  //     color: rgba(0, 0, 0, 0.5)
-  //   }
-  // }
+    &:hover {
+      color: rgba(0, 0, 0, 0.5)
+    }
+  }
 }
 </style>

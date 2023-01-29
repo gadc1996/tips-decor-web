@@ -9,5 +9,6 @@
 .index-testimonials-decoration {
   position: absolute;
   z-index: -1;
+
 }
 </style>

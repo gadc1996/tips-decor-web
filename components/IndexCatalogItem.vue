@@ -30,9 +30,12 @@ NuxtLink.index-catalog-item(
 .index-catalog-item {
   text-decoration: none;
   color: black;
-  width: 30%;
+  width: 100%;
   transition: all 0.5s linear;
   margin: 2rem 0;
+  @media screen and (min-width: 480px) {
+    width: 30%;
+  }
   &:hover {
     transform: scale(1.1);
   }

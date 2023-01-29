@@ -27,6 +27,7 @@ const footerLinks = useSocialLinks()
     display: flex;
     justify-content: center;
     &__logo {
+      height: 40px;
       margin: 1rem;
       fill: white !important;
     }
